@@ -57,8 +57,8 @@ public class App {
             int i = 1;
             while ((line = br.readLine()) != null) {
                 if (line.matches("^[a-z]{4}$")) {
-                    if (logger.isLoggable(Level.INFO)) {
-                        logger.log(Level.INFO, String.format("Adding %s", line));
+                    if (logger.isLoggable(Level.FINEST)) {
+                        logger.log(Level.FINEST, String.format("Adding %s", line));
                     }
                     wordleDatabaseConnection.addValidWord(i, line);
                     i++;
